@@ -1,7 +1,7 @@
 body {
     background-color: black !important;
     font-family: 'Poppins';
-    color: #FFFFFF !important;
+    color: #777E90 !important;
 }
 
 p {
@@ -12,6 +12,50 @@ p {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Germania One';
     color: #EAC88C !important;
+}
+
+h1 {
+    font-size: 3rem; /* Adjust the font size for h1 */
+}
+
+h2 {
+    font-size: 4rem !important; /* Adjust the font size for h2 */
+}
+
+h3 {
+    font-size: 2rem; /* Adjust the font size for h3 */
+}
+
+h4 {
+    font-size: 1.5rem; /* Adjust the font size for h4 */
+}
+
+h5 {
+    font-size: 1.25rem; /* Adjust the font size for h5 */
+}
+
+h6 {
+    font-size: 1.4rem !important; /* Adjust the font size for h6 */
+}
+
+.rarities p {
+	color: #777E90;
+}
+
+.common h6 {
+	color: #9D958C !important;
+}
+
+.rare h6 {
+	color: #7F6AC1 !important;
+}
+
+.epic h6 {
+	color: #C34D85 !important;
+}
+
+.legendary h6 {
+	color: #D17923 !important;
 }
 
 .navbar {
@@ -28,12 +72,52 @@ h1, h2, h3, h4, h5, h6 {
     color: white !important;
 }
 
+.divider {
+    background-image: url("images/divider2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; /* Adjusted background position */
+    width: 100vw;
+    height: 1vh;
+}
+
+
 .hero {
     background-image: url("images/background/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
     height: 100vh;
+}
+
+.about-cards {
+    background-image: url("images/background/about-cards.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 40vw !important;
+}
+
+.foils {
+    background-image: url("images/background/foils.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 30vw !important;
+}
+
+
+.p2e {
+    background-image: url("images/background/p2e.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 40vw !important;
+}
+
+.p2e img {
+	height: 50vh !important;
+	width: auto !important;
 }
 
 @media (max-width: 768px) {
@@ -46,6 +130,8 @@ h1, h2, h3, h4, h5, h6 {
 .logoContainer {
 	margin-top: "50%";
 }
+
+
 
 .join {
     background-image: url("images/background/join.webp");
