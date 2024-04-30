@@ -29,10 +29,75 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero {
-    background-image: url("images/background/hero.png");
+    background-image: url("images/background/hero.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
     height: 100vh;
+}
+
+@media (max-width: 768px) {
+    /* Adjust background image size for smaller screens if necessary */
+    .hero {
+        background-size: contain;
+    }
+}
+
+.logoContainer {
+	margin-top: "50%";
+}
+
+.join {
+    background-image: url("images/background/join.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; /* Adjusted background position */
+    height: 80vh;
+}
+
+.melee {
+    background-image: url("images/background/melee.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; /* Adjusted background position */
+}
+
+.ranged {
+    background-image: url("images/background/ranged.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; /* Adjusted background position */
+}
+
+.magic {
+    background-image: url("images/background/magic.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top; /* Adjusted background position */
+}
+
+.attack {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 45rem !important; /* Adjust the height as needed */
+    border-radius: 30px; /* Adjust the border radius as needed */
+}
+
+.card-body {
+    height: 100%;
+    padding-bottom: 40% !important;
+}
+.melee.attack,
+.ranged.attack,
+.magic.attack {
+    display: flex;
+}
+
+.melee.attack .card-body,
+.ranged.attack .card-body,
+.magic.attack .card-body {
+    flex-direction: column;
+    justify-content: flex-end;
 }
 

@@ -11,7 +11,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg bg-dark">
+	<nav class="navbar navbar-expand-lg" style="background-color: #000000;">
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="#"><img src="/images/small-logo.png" class="img-fluid" alt="Example image"	 loading="lazy"></a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,20 +43,20 @@
 	    </div>
 	  </div>
 	</nav>
+<div class="text-center hero d-flex justify-content-center align-items-center">
+    <div class="col-lg-6 mx-auto logoContainer">
+        <div class="overflow-hidden">
+            <div class="container">
+                <img src="/images/main-logo2.webp" class="img-fluid" alt="Example image" width="70%" loading="lazy">
+            </div>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+        </div>
+    </div>
+</div>
 
-	<div class="text-center hero">
-	    <div class="col-lg-6 mx-auto">
-	    <div class="overflow-hidden" style="max-height: 30vh;">
-	      <div class="container px-5">
-	        <img src="/images/main-logo.png" class="img-fluid" alt="Example image" width="500" loading="lazy">
-	      </div>
-	    </div>
-	      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-	        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-	        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
-	      </div>
-	    </div>
-  </div>
 
 
 	<div class="container col-xxl-8 px-4 py-5">
@@ -81,7 +81,7 @@
 	<div class="container text-center">
 	  <div class="row">
 	    <div class="col">
-	      <img src="/images/rarities.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" loading="lazy">
+	      <img src="/images/rarities.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" loading="lazy">
 	    </div>
 	  </div>
 	  <h2>Rarities</h2>
@@ -137,41 +137,41 @@
 	      	</div>
 	      </div>
 	      <div class="col-10 col-sm-8 col-lg-6">
-	        <img src="/images/foils.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" loading="lazy">
+	        <img src="/images/foils.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" loading="lazy">
 	      </div>
 	    </div>
   </div>
 
 	<div class="container px-4 py-5 text-center" id="featured-3">
 	    <h2>Attack Types</h2>
-	    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-	      <div class="feature col">
-	        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-	          <!-- <img src="/images/attacks/Melee.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="350" loading="lazy"> -->
-	          <img src="/images/attacks/melee-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="150" loading="lazy">
+	    <div class="row">
+	        <div class="col">
+	            <div class="melee attack">
+	                <div class="card-body d-flex flex-column align-items-center justify-content-end">
+	                    <img src="/images/attacks/melee-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+	                    <h5 class="card-title">Melee</h5>
+	                </div>
+	            </div>
 	        </div>
-	        <h3 class="fs-2 ">Melee</h3>
-	        <p>Typical attack type of front tanks or sneak units</p>
-	      </div>
-	      <div class="feature col">
-	        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-	          <!-- <img src="/images/attacks/Ranged.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="350" loading="lazy"> -->
-	          <img src="/images/attacks/ranged-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="150" loading="lazy">
+	        <div class="col">
+	            <div class="ranged attack">
+	                <div class="card-body d-flex flex-column align-items-center justify-content-end">
+	                    <img src="/images/attacks/ranged-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+	                    <h5 class="card-title">Ranged</h5>
+	                </div>
+	            </div>
 	        </div>
-	        <h3 class="fs-2 ">Ranged</h3>
-	        <p>Shoot your enemies from support line without exposing them!</p>
-	      </div>
-	      <div class="feature col">
-	        <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
-	          <!-- <img src="/images/attacks/Magic.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="350" loading="lazy"> -->
-	          <img src="/images/attacks/magic-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="150" loading="lazy">
+	        <div class="col">
+	            <div class="magic attack">
+	                <div class="card-body d-flex flex-column align-items-center justify-content-end">
+	                    <img src="/images/attacks/magic-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy">
+	                    <h5 class="card-title">Magic</h5>
+	                </div>
+	            </div>
 	        </div>
-	        <h3 class="fs-2 ">Magic</h3>
-	        <p>High mana, Cannot miss!</p>
-	      </div>
 	    </div>
-  </div>
-
+	</div>
+	
 	<div class="px-4 pt-5 my-5 text-center border-bottom">
 			<h2>Play 2 Earn</h2>
 	    <div class="col-lg-6 mx-auto">
@@ -179,7 +179,7 @@
 	    </div>
 
       <div class="container px-5">
-        <img src="/images/p2e.png" class="img-fluid" alt="Example image"	 loading="lazy">
+        <img src="/images/p2e.webp" class="img-fluid" alt="Example image"	 loading="lazy">
       </div>
 
   </div>
@@ -205,13 +205,17 @@
 
 	</div>
 
-	<div class="px-4 py-5 my-5 text-center">
-	    <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-	    <h2 class="display-5 fw-bold ">Join the Presale now</h2>
-	    <div class="col-lg-6 mx-auto">
-	      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-	        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
-	      </div>
+	<div class="px-4 py-5 my-5 text-center join d-flex justify-content-center align-items-center">
+	    <div class="row">
+	    	<div class="col">
+	    		<div class="row">
+	    			<h2 class="display-5 fw-bold ">Join the Presale now</h2>
+	    		</div>
+	    		<div class="row">
+      			<button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+	    		</div>
+	    	</div>
+
 	    </div>
   </div>
 
