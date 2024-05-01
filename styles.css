@@ -2,6 +2,7 @@ body {
     background-color: black !important;
     font-family: 'Poppins';
     color: #777E90 !important;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 p {
@@ -36,6 +37,33 @@ h5 {
 
 h6 {
     font-size: 1.4rem !important; /* Adjust the font size for h6 */
+}
+.carousel img {
+    width: 30%; /* Limit the height on larger screens */
+}
+
+.image-button {
+    background-image: url('./images/button.webp'); /* Replace 'button-background.jpg' with the path to your button image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    width: 200px; /* Adjust width and height based on your button image */
+    height: 50px;
+    color: white; /* Text color */
+    font-size: 18px; /* Text size */
+    text-align: center; /* Center the text horizontally */
+    line-height: 50px; /* Center the text vertically */
+    cursor: pointer;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    transition: opacity 0.3s ease; 
+}
+
+/* Hover effect (optional) */
+.image-button:hover {
+    /* Add hover effect styles */
+    opacity: 0.8; /* For example, reduce opacity */
 }
 
 .rarities p {
