@@ -128,17 +128,18 @@ h6 {
 	color: #D17923 !important;
 }
 
-.navbar {
+/*.navbar {
     height: 6rem;
 
-}
+}*/
 
-.navbar {
+/*.navbar {
   display: flex;
-  align-items: center; /* Vertically center the items */
-  justify-content: space-between; /* Distribute items evenly along the main axis */
+  align-items: center;
+  justify-content: space-between; 
   height: 6rem;
 }
+*/
 
 .navbar-brand,
 .navbar-nav .nav-link {
@@ -147,18 +148,17 @@ h6 {
     padding-right: 1rem;
 }
 
+
 .nav-item {
 	padding-left: 1.5rem;
 }
-
 .nav-link {
     color: #777E90 !important;
     font-family: 'SF Pro Display', sans-serif;
-/*    font-weight: 'bold';*/
 }
 
 .nav-link img {
-  filter: grayscale(1%) saturate(1%) contrast(1%); !important; /* Standard syntax */
+  filter: grayscale(1%) saturate(1%) contrast(1%); !important;
 }
 
 .rounded-button {
@@ -173,7 +173,14 @@ h6 {
   overflow: hidden;
   cursor: pointer;
   color: white;
+  transition: opacity 0.3s ease;
 }
+
+.rounded-button:hover {
+    /* Add hover effect styles */
+    opacity: 0.8; /* For example, reduce opacity */
+}
+
 
 .divider {
   background-image: url("images/divider2.webp");
@@ -205,7 +212,7 @@ h6 {
 .foils {
     background-image: url("images/background/foils.webp");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center top;
 }
 
@@ -235,10 +242,13 @@ h6 {
 }
 
 .logoContainer {
-	margin-top: "50%";
+	max-width: 1000px;
+	margin-top: 5%;
 }
 
-
+.logoContainer img {
+	width: 150% !important;
+}
 
 .join {
     background-image: url("images/background/join.webp");
