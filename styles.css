@@ -1,6 +1,7 @@
 body {
     background-color: black !important;
     font-family: 'Poppins';
+    font-size: 16px;
     color: #777E90 !important;
     overflow-x: hidden; /* Prevent horizontal overflow */
 }
@@ -16,15 +17,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3rem; /* Adjust the font size for h1 */
+    font-size: 64px !important; /* Adjust the font size for h1 */
 }
 
 h2 {
-    font-size: 4rem !important; /* Adjust the font size for h2 */
+    font-size: 64px !important; /* Adjust the font size for h2 */
 }
 
 h3 {
-    font-size: 2rem; /* Adjust the font size for h3 */
+    font-size: 48px; /* Adjust the font size for h3 */
 }
 
 h4 {
@@ -39,10 +40,12 @@ h6 {
     font-size: 1.4rem !important; /* Adjust the font size for h6 */
 }
 .carousel img {
-    width: 30%; /* Limit the height on larger screens */
+    width: 328px; /* Limit the height on larger screens */
 }
 
 .image-button {
+    font-family: 'Germania One';
+    color: #EAC88C !important;
     background-image: url('./images/button.webp'); /* Replace 'button-background.jpg' with the path to your button image */
     background-size: contain;
     background-repeat: no-repeat;
@@ -60,10 +63,49 @@ h6 {
     transition: opacity 0.3s ease; 
 }
 
+.test {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+.civ-icon {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* Adjust spacing between icons */
+    opacity: 0.5;
+}
+
+.egypt-icon {
+    background-image: url('https://dvaiulh40vjp3.cloudfront.net/logos-icons/civs-icons/gray/egypt.png'), url('./images/icon.webp');
+    background-size: 30% auto, contain; /* Set the size of each background image */
+    background-position: center, center; /* Position each background image */
+    opacity: 1;
+}
+
+.greece-icon {
+    background-image: url('https://dvaiulh40vjp3.cloudfront.net/logos-icons/civs-icons/gray/greece.png'), url('./images/icon.webp');
+    background-size: auto 70%, contain; /* Set the size of each background image */
+    background-position: center, center; /* Position each background image */
+}
+
+.norse-icon {
+    background-image: url('https://dvaiulh40vjp3.cloudfront.net/logos-icons/civs-icons/gray/norse.png'), url('./images/icon.webp');
+    background-size:  50% auto, contain; /* Set the size of each background image */
+    background-position: center, center; /* Position each background image */
+}
 /* Hover effect (optional) */
 .image-button:hover {
     /* Add hover effect styles */
     opacity: 0.8; /* For example, reduce opacity */
+}
+
+.rarities .col h6 {
+    margin-top: 24px; /* Add margin-top to create spacing between the image and the header */
 }
 
 .rarities p {
@@ -88,25 +130,58 @@ h6 {
 
 .navbar {
     height: 6rem;
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  height: 6rem;
 }
 
 .navbar-brand,
 .navbar-nav .nav-link {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    padding-right: 1rem;
+}
+
+.nav-item {
+	padding-left: 1.5rem;
 }
 
 .nav-link {
-    color: white !important;
+    color: #777E90 !important;
+    font-family: 'SF Pro Display', sans-serif;
+/*    font-weight: 'bold';*/
+}
+
+.nav-link img {
+  filter: grayscale(1%) saturate(1%) contrast(1%); !important; /* Standard syntax */
+}
+
+.rounded-button {
+	margin-top: 1rem;
+  width: 150px; /* Three times wider than tall */
+  height: 50px;
+  border-radius: 25px; /* Half of the height to make it rounded */
+  border-color: #777E90 !important;
+  background-color: transparent;
+  border: 2px solid white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  color: white;
 }
 
 .divider {
-    background-image: url("images/divider2.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top; /* Adjusted background position */
-    width: 100vw;
-    height: 1vh;
+  background-image: url("images/divider2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; /* Adjusted background position */
+  width: 100vw;
+  height: 1vh;
 }
 
 
@@ -123,15 +198,15 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 40vw !important;
+    height: 900px !important;
+    padding: 80px 160px 80px 80px;
 }
 
 .foils {
     background-image: url("images/background/foils.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center top;
-    height: 30vw !important;
 }
 
 
@@ -222,4 +297,3 @@ h6 {
     flex-direction: column;
     justify-content: flex-end;
 }
-
