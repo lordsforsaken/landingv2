@@ -54,7 +54,6 @@ h6 {
     border: none;
     width: 320px; /* Adjust width and height based on your button image */
     height: 65px;
-    color: white; /* Text color */
     font-size: 18px; /* Text size */
     text-align: center; /* Center the text horizontally */
     line-height: 50px; /* Center the text vertically */
@@ -62,6 +61,12 @@ h6 {
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margin */
     transition: opacity 0.3s ease; 
+}
+
+
+.image-button a {
+	color: inherit !important;
+	text-decoration: none !important;
 }
 
 .test {
@@ -105,19 +110,9 @@ h6 {
     opacity: 0.8; /* For example, reduce opacity */
 }
 
-
-/*.navbar {
-    height: 6rem;
-
-}*/
-
-/*.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  height: 6rem;
+.navbar-item link {
+	cursor: pointer;
 }
-*/
 
 .navbar-brand,
 .navbar-nav .nav-link {
@@ -152,6 +147,11 @@ h6 {
   cursor: pointer;
   color: white;
   transition: opacity 0.3s ease;
+}
+
+.rounded-button a {
+	color: inherit !important;
+	text-decoration: none !important;
 }
 
 .rounded-button:hover {
