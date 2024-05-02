@@ -196,13 +196,17 @@ h6 {
 }
 
 .rarities .cards img {
-	width: 18vw;
-	height: auto;
+/*	width: 18vw;*/
+	max-height: 30vh;
+	width: auto;
+/*	height: auto;*/
 }
 
 .rarities .viking img {
-	width: 100vw;
-	height: auto;
+	
+	max-height: 50vh;
+/*	width: 100vw;*/
+	width: auto;
 }
 
 .rarities .col h6 {
@@ -235,7 +239,20 @@ h6 {
     background-size: cover;
     background-position: center top;
     padding: 80px 160px 80px 80px;
-    height: 80vh !important;
+    height: 100vh !important;
+}
+
+.foils .viking img {
+	max-height: 70vh !important;
+	width: auto;
+}
+
+.attack-types {
+	padding: 80px 160px 80px 80px;
+}
+
+.attack-types p {
+	color: #777E90;
 }
 
 .p2e {
@@ -249,14 +266,24 @@ h6 {
 
 
 .p2e img {
-	width: 200vw !important;
-	height: auto !important;
+	width: auto !important;
+	max-height: 90vh !important;
 }
 
 .p2e p {
 	color: #777E90;
 	font-size: 16px !important;
 }
+
+.join {
+	padding: 80px 160px 80px 80px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/join.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top; /* Adjusted background position */
+  height: 80vh;
+}
+
 
 .footer {
 	height: 15vh !important;
@@ -286,21 +313,7 @@ h6 {
 	width: 150% !important;
 }
 
-.join {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/join.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top; /* Adjusted background position */
-    height: 80vh;
-}
 
-.attack-types {
-	margin-top: 5% !important;
-}
-
-.attack-types p {
-	color: #777E90;
-}
 
 .melee {
     background-image: url("images/background/melee.webp");
