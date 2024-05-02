@@ -39,9 +39,6 @@ h5 {
 h6 {
     font-size: 1.4rem !important; /* Adjust the font size for h6 */
 }
-.carousel img {
-    width: 328px; /* Limit the height on larger screens */
-}
 
 .image-button {
     font-family: 'Germania One';
@@ -185,6 +182,26 @@ h6 {
     .logoContainer button {
     	margin-top: 10px !important;
     }
+
+    .rarities {
+/*    	height: 200vh !important;*/
+    }
+
+    .rarities .row {
+    	display: inline-flex !important;
+    	flex-wrap: wrap !important;
+    }
+
+    .foils {
+    	padding: 8px 16px 8px 16px;
+    }
+    .foils img {
+    	width: 100px;
+    }
+
+    .attack-types img {
+    	width: 150px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -194,11 +211,37 @@ h6 {
 	    background-repeat: no-repeat;
 	    background-position: center top; /* Adjusted background position */
 	    height: 100vh !important;
+	    padding: 80px 160px 80px 160px;
     }
     .logoContainer {
 				max-width: 1000px;
 				margin-top: 5%;
     }
+
+    .rarities {
+/*    	height: 140vh !important;*/
+    }
+
+    .rarities .row {
+    	display: flex !important;
+    	flex-wrap: wrap !important;
+    }
+    .foils img {
+    	width: 300px;
+    }
+
+    .card-description {
+			height: 40%; display: grid; padding: 24px; margin-top: 15%;
+    }
+
+    .attack-types {
+    	padding-top: 24px
+    }
+
+}
+
+.carousel img {
+    width: 30vh !important; /* Limit the height on larger screens */
 }
 
 .about-cards {
@@ -207,12 +250,8 @@ h6 {
     background-size: cover;
     background-position: center top;
     height: 100vh !important;
-/*    padding: 80px 160px 80px 160px;*/
 }
 
-.rarities {
-	height: 140vh !important;
-}
 
 .rarities p {
 	font-size: 16px !important;
@@ -257,12 +296,10 @@ h6 {
 }
 
 .foils {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/foils.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    padding: 80px 160px 80px 160px;
-    height: 100vh !important;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/foils.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 .foils .viking img {
@@ -270,9 +307,6 @@ h6 {
 	width: auto;
 }
 
-.attack-types {
-	padding: 80px 160px 80px 160px;
-}
 
 .attack-types p {
 	color: #777E90;
@@ -283,7 +317,6 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    padding: 80px 160px 80px 160px;
     height: 100vh !important;
 }
 
@@ -299,7 +332,6 @@ h6 {
 }
 
 .join {
-	padding: 80px 160px 80px 160px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/join.webp");
   background-repeat: no-repeat;
   background-size: cover;
