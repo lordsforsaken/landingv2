@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins';
     font-size: 16px;
     color: #777E90 !important;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    overflow-x: hidden !important; /* Prevent horizontal overflow */
 }
 
 p {
@@ -169,13 +169,36 @@ h6 {
   height: 1vh;
 }
 
+@media (max-width: 768px) {
+    /* Adjust background image size for smaller screens if necessary */
+    .hero {
+      background-size: contain;
+      background-image: url("images/background/hero-mobile.webp");
+	    background-repeat: no-repeat;
+	    background-position: center top; /* Adjusted background position */
+	    height: 100vh !important;
+    }
+    .logoContainer {
+				max-width: 1000px;
+				margin-top: -50%;
+    }
+    .logoContainer button {
+    	margin-top: 10px !important;
+    }
+}
 
-.hero {
-    background-image: url("images/background/hero.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top; /* Adjusted background position */
-    height: 100vh !important;
+@media (min-width: 769px) {
+    .hero {
+      background-size: cover;
+      background-image: url("images/background/hero.webp");
+	    background-repeat: no-repeat;
+	    background-position: center top; /* Adjusted background position */
+	    height: 100vh !important;
+    }
+    .logoContainer {
+				max-width: 1000px;
+				margin-top: 5%;
+    }
 }
 
 .about-cards {
@@ -295,25 +318,6 @@ h6 {
     cursor: pointer;
     opacity: 0.8; /* For example, reduce opacity */
 }
-
-
-@media (max-width: 768px) {
-    /* Adjust background image size for smaller screens if necessary */
-    .hero {
-        background-size: contain;
-    }
-}
-
-.logoContainer {
-	max-width: 1000px;
-	margin-top: 5%;
-}
-
-.logoContainer img {
-	width: 150% !important;
-}
-
-
 
 .melee {
     background-image: url("images/background/melee.webp");

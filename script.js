@@ -53,3 +53,20 @@ setInterval(async() => {
 
 }, 5000)
 
+// Function to add screen size classes
+function addScreenSizeClass() {
+const width = window.innerWidth;
+const target = document.getElementById("main-buttons");
+
+if (width <= 767) {
+  target.classList.remove('d-grid');
+  // target.classList.remove('medium-screen');
+} else {
+  // target.classList.add('large-screen');
+  target.classList.add('d-grid');
+}
+}
+
+// Call the function when the page loads and on resize
+window.onload = addScreenSizeClass;
+window.onresize = addScreenSizeClass;
