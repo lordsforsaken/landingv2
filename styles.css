@@ -107,30 +107,6 @@ h6 {
     opacity: 0.8; /* For example, reduce opacity */
 }
 
-.navbar-item link {
-	cursor: pointer;
-}
-
-.navbar-brand,
-.navbar-nav .nav-link {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 1rem;
-}
-
-
-.nav-item {
-	padding-left: 1.5rem;
-}
-.nav-link {
-    color: #777E90 !important;
-    font-family: 'SF Pro Display', sans-serif;
-}
-
-.nav-link img {
-  filter: grayscale(1%) saturate(1%) contrast(1%); !important;
-}
-
 .rounded-button {
 	margin-top: 1rem;
   width: 150px; /* Three times wider than tall */
@@ -166,10 +142,19 @@ h6 {
   height: 1vh;
 }
 
+.nav-link {
+    color: #777E90 !important;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+.nav-link img {
+  filter: grayscale(1%) saturate(1%) contrast(1%); !important;
+}   
+
 @media (max-width: 768px) {
     /* Adjust background image size for smaller screens if necessary */
     .hero {
-      background-size: contain;
+      background-size: 100% auto;
       background-image: url("images/background/hero-mobile.webp");
 	    background-repeat: no-repeat;
 	    background-position: center top; /* Adjusted background position */
@@ -202,6 +187,23 @@ h6 {
     .attack-types img {
     	width: 150px;
     }
+
+		.navbar-item link {
+			cursor: pointer;
+		}
+
+		.navbar-brand,
+		.navbar-nav .nav-link {
+		    padding-top: 1rem;
+		    padding-bottom: 1rem;
+		    padding-right: 0.5rem;
+		}
+
+
+		.nav-item {
+			padding-left: 0.5rem;
+		}
+
 }
 
 @media (min-width: 769px) {
@@ -238,6 +240,27 @@ h6 {
     	padding-top: 24px
     }
 
+		.navbar-item link {
+			cursor: pointer;
+		}
+
+		.navbar-brand,
+		.navbar-nav .nav-link {
+		    padding-top: 2rem;
+		    padding-bottom: 2rem;
+		    padding-right: 1rem;
+		}
+
+		.nav-item {
+			padding-left: 1.5rem;
+		}
+		.navbar-brand {
+			margin-left: 150px;
+		}
+
+		.try-the-game {
+			margin-right: 150px;
+		}
 }
 
 .carousel img {
