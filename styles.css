@@ -45,14 +45,15 @@ h6 {
 
 .image-button {
     font-family: 'Germania One';
+    font-size: 28px !important;
     color: #EAC88C !important;
     background-image: url('./images/button.webp'); /* Replace 'button-background.jpg' with the path to your button image */
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: rgba(0,0,0,0);
     border: none;
-    width: 200px; /* Adjust width and height based on your button image */
-    height: 50px;
+    width: 320px; /* Adjust width and height based on your button image */
+    height: 65px;
     color: white; /* Text color */
     font-size: 18px; /* Text size */
     text-align: center; /* Center the text horizontally */
@@ -104,29 +105,6 @@ h6 {
     opacity: 0.8; /* For example, reduce opacity */
 }
 
-.rarities .col h6 {
-    margin-top: 24px; /* Add margin-top to create spacing between the image and the header */
-}
-
-.rarities p {
-	color: #777E90;
-}
-
-.common h6 {
-	color: #9D958C !important;
-}
-
-.rare h6 {
-	color: #7F6AC1 !important;
-}
-
-.epic h6 {
-	color: #C34D85 !important;
-}
-
-.legendary h6 {
-	color: #D17923 !important;
-}
 
 /*.navbar {
     height: 6rem;
@@ -197,7 +175,7 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
-    height: 100vh;
+    height: 100vh !important;
 }
 
 .about-cards {
@@ -205,34 +183,92 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 900px !important;
-    padding: 80px 160px 80px 80px;
+    height: 100vh !important;
+/*    padding: 80px 160px 80px 80px;*/
+}
+
+.rarities {
+	height: 140vh !important;
+}
+
+.rarities p {
+	font-size: 16px !important;
+}
+
+.rarities .cards img {
+	width: 18vw;
+	height: auto;
+}
+
+.rarities .viking img {
+	width: 80vh;
+	height: auto;
+}
+
+.rarities .col h6 {
+    margin-top: 24px; /* Add margin-top to create spacing between the image and the header */
+}
+
+.rarities p {
+	color: #777E90;
+}
+
+.common h6 {
+	color: #9D958C !important;
+}
+
+.rare h6 {
+	color: #7F6AC1 !important;
+}
+
+.epic h6 {
+	color: #C34D85 !important;
+}
+
+.legendary h6 {
+	color: #D17923 !important;
 }
 
 .foils {
-    background-image: url("images/background/foils.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/foils.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    padding: 80px 160px 80px 80px;
+    height: 80vh !important;
 }
-
 
 .p2e {
     background-image: url("images/background/p2e.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 40vw !important;
+/*    padding: 80px 160px 80px 80px;*/
+    height: 100vh !important;
 }
 
+
 .p2e img {
-	width: 40% !important;
+	width: 100% !important;
 	height: auto !important;
 }
 
 .p2e p {
 	color: #777E90;
+	font-size: 16px !important;
 }
+
+.footer {
+	height: 15vh !important;
+	font-size: "Poppins";
+	color: white;
+}
+
+.footer img:hover {
+    cursor: pointer;
+    opacity: 0.8; /* For example, reduce opacity */
+}
+
 
 @media (max-width: 768px) {
     /* Adjust background image size for smaller screens if necessary */
@@ -251,11 +287,15 @@ h6 {
 }
 
 .join {
-    background-image: url("images/background/join.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/join.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
     height: 80vh;
+}
+
+.attack-types {
+	margin-top: 5% !important;
 }
 
 .attack-types p {
