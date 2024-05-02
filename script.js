@@ -1,6 +1,12 @@
 
 let counter = 1;
 
+let text = [
+	"Ancient Egyptian god of the dead, associated with mummification and the afterlife, often depicted as a man with the head of a jackal",
+	"Zeus is the sky and thunder god in ancient Greek religion and mythology, who rules as king of the gods on Mount Olympus",
+	"Odin has many names and is the god of both war and death. Half of the warriors who die in battle are taken to his hall of Valhalla"
+]
+
 function wait(ms) {
 	return new Promise((resolve) => {
 		setTimeout(() => {
@@ -12,11 +18,13 @@ function wait(ms) {
 setInterval(async() => {
 	console.log("setInterval", counter)
 	let cardId = counter % 3;
+	const description = document.getElementById("card-description-text");
 	for (let i = 0; i < 3; i++) {
 		const card = document.getElementById(`card-${i}`)
 		// first we do fade out
 
 		if (i !== cardId && card.style.display == "block") {
+			description.innerText = text[cardId]
 			card.classList.remove("animate__slideInRight")
 			// card.classList.add("animate__slideOutLeft")
 			card.classList.add("animate__fadeOut")

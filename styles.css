@@ -15,6 +15,13 @@ h1, h2, h3, h4, h5, h6 {
     color: #EAC88C !important;
 }
 
+.silver {
+  color: #A7A7A7 !important;
+}
+
+.foils p {
+  color: #777E90 !important;
+}
 
 .navbar {
 	--bs-navbar-toggler-border-color: white !important;
@@ -131,23 +138,18 @@ h1, h2, h3, h4, h5, h6 {
     body {
       background-size: contain;
       background-image: url("images/background/hero-mobile.webp");
-	    background-repeat: no-repeat;
-	    background-position: center top; /* Adjusted background position */
-	    height: 100vh !important;
-			font-size: 16px;
+      background-repeat: no-repeat;
+      background-position: center top; /* Adjusted background position */
+      height: 100vh !important;
+      font-size: 16px;
     }
 
     .collab img {
     	width: 150px;
     }
 
-    .hero {
-/*    	height: 60vh;*/
-    }
-
     .logoContainer {
-				max-width: 1000px;
-/*				margin-top: -50%;*/
+    	max-width: 1000px;
     }
 
     .logoContainer button {
@@ -204,98 +206,103 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 769px) {
-		h1 {
-		    font-size: 64px !important; /* Adjust the font size for h1 */
-		}
+	h1 {
+	    font-size: 64px !important; /* Adjust the font size for h1 */
+	}
 
-		h2 {
-		    font-size: 64px !important; /* Adjust the font size for h2 */
-		}
+	h2 {
+	    font-size: 64px !important; /* Adjust the font size for h2 */
+	}
 
-		h3 {
-		    font-size: 48px; /* Adjust the font size for h3 */
-		}
+	h3 {
+	    font-size: 48px; /* Adjust the font size for h3 */
+	}
 
-		h4 {
-		    font-size: 1.5rem; /* Adjust the font size for h4 */
-		}
+	h4 {
+	    font-size: 1.5rem; /* Adjust the font size for h4 */
+	}
 
-		h5 {
-		    font-size: 2rem !important; /* Adjust the font size for h5 */
-		}
+	h5 {
+	    font-size: 2rem !important; /* Adjust the font size for h5 */
+	}
 
-		h6 {
-		    font-size: 1.4rem !important; /* Adjust the font size for h6 */
-		}
+	h6 {
+	    font-size: 1.4rem !important; /* Adjust the font size for h6 */
+	}
 
-		.collab img {
-			width: 300px;
-		}
+  .block {
+    margin-top: 55px;
+    padding: 80px 160px 80px 160px;
+  }
 
-    .hero {
-      background-size: cover;
-      background-image: url("images/background/hero.webp");
-	    background-repeat: no-repeat;
-	    background-position: center top; /* Adjusted background position */
-	    height: 100vh !important;
-	    padding: 80px 160px 80px 160px;
-	    font-size: 16px;
-    }
-    .logoContainer {
-				max-width: 1000px;
-				margin-top: 5%;
-    }
+	.collab img {
+		width: 300px;
+	}
 
-    .rarities {
+  .hero {
+    background-size: cover;
+    background-image: url("images/background/hero.webp");
+    background-repeat: no-repeat;
+    background-position: center top; /* Adjusted background position */
+    height: 100vh !important;
+    padding: 80px 160px 80px 160px;
+    font-size: 16px;
+  }
+  .logoContainer {
+			max-width: 1000px;
+			margin-top: 5%;
+  }
+
+  .rarities {
 /*    	height: 140vh !important;*/
-    }
+  }
 
-		.rarities .cards img {
-			max-height: 30vh;
-			width: auto;
-		}
+	.rarities .cards img {
+		max-height: 30vh;
+		width: auto;
+	}
 
-    .rarities .row {
-    	display: flex !important;
-    	flex-wrap: wrap !important;
-    }
-    .foils img {
-    	width: 300px;
-    }
+  .rarities .row {
+  	display: flex !important;
+  	flex-wrap: wrap !important;
+  }
+  .foils img {
+  	width: 200px;
+  }
 
-    .card-description {
-			height: 40%; display: grid; padding: 24px; margin-top: 15%;
-    }
+  .card-description {
+		height: 40%; display: grid; padding: 24px; margin-top: 15%;
+  }
 
-    .attack-types {
-    	padding-top: 24px
-    }
+  .attack-types {
+  	padding-top: 24px
+  }
 
-		.navbar-item link {
-			cursor: pointer;
-		}
+	.navbar-item link {
+		cursor: pointer;
+	}
 
-		.navbar-brand,
-		.navbar-nav .nav-link {
-		    padding-top: 2rem;
-		    padding-bottom: 2rem;
-		    padding-right: 1rem;
-		}
+	.navbar-brand,
+	.navbar-nav .nav-link {
+	    padding-top: 2rem;
+	    padding-bottom: 2rem;
+	    padding-right: 1rem;
+	}
 
-		.nav-item {
-			padding-left: 1.5rem;
-		}
-		.navbar-brand {
-			margin-left: 150px;
-		}
+	.nav-item {
+		padding-left: 1.5rem;
+	}
+	.navbar-brand {
+		margin-left: 150px;
+	}
 
-		.try-the-game {
-			margin-right: 150px;
-		}
+	.try-the-game {
+		margin-right: 150px;
+	}
 
-		.about-cards {
-			height: 100vh !important;
-		}
+	.about-cards {
+		height: 100vh !important;
+	}
 }
 
 .carousel img {
@@ -303,11 +310,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-cards {
-    background-image: url("images/background/about-cards.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-/*    height: 100vh !important;*/
+  background-image: url("images/background/about-cards.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 
