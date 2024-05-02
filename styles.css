@@ -201,7 +201,7 @@ h6 {
 }
 
 .rarities .viking img {
-	width: 80vh;
+	width: 100vw;
 	height: auto;
 }
 
@@ -249,7 +249,7 @@ h6 {
 
 
 .p2e img {
-	width: 100% !important;
+	width: 200vw !important;
 	height: auto !important;
 }
 
