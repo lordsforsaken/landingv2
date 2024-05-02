@@ -1,7 +1,6 @@
 body {
-    background-color: black !important;
+    background-color: black;
     font-family: 'Poppins';
-    font-size: 16px;
     color: #777E90 !important;
     overflow-x: hidden !important; /* Prevent horizontal overflow */
 }
@@ -16,28 +15,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #EAC88C !important;
 }
 
-h1 {
-    font-size: 64px !important; /* Adjust the font size for h1 */
-}
 
-h2 {
-    font-size: 64px !important; /* Adjust the font size for h2 */
-}
-
-h3 {
-    font-size: 48px; /* Adjust the font size for h3 */
-}
-
-h4 {
-    font-size: 1.5rem; /* Adjust the font size for h4 */
-}
-
-h5 {
-    font-size: 2rem !important; /* Adjust the font size for h5 */
-}
-
-h6 {
-    font-size: 1.4rem !important; /* Adjust the font size for h6 */
+.navbar {
+	--bs-navbar-toggler-border-color: white !important;
+	--bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23ffffff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .image-button {
@@ -64,12 +45,6 @@ h6 {
 .image-button a {
 	color: inherit !important;
 	text-decoration: none !important;
-}
-
-.test {
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
 }
 
 .civ-icon {
@@ -153,20 +128,36 @@ h6 {
 
 @media (max-width: 768px) {
     /* Adjust background image size for smaller screens if necessary */
-    .hero {
-      background-size: 100% auto;
+    body {
+      background-size: contain;
       background-image: url("images/background/hero-mobile.webp");
 	    background-repeat: no-repeat;
 	    background-position: center top; /* Adjusted background position */
 	    height: 100vh !important;
+			font-size: 16px;
     }
+
+    .collab img {
+    	width: 150px;
+    }
+
+    .hero {
+/*    	height: 60vh;*/
+    }
+
     .logoContainer {
 				max-width: 1000px;
-				margin-top: -50%;
+/*				margin-top: -50%;*/
     }
+
     .logoContainer button {
     	margin-top: 10px !important;
     }
+
+		.rarities .cards img {
+			max-height: 50vh;
+			width: auto;
+		}
 
     .rarities {
 /*    	height: 200vh !important;*/
@@ -178,14 +169,18 @@ h6 {
     }
 
     .foils {
-    	padding: 8px 16px 8px 16px;
+    	padding: 4px 8 4px 8;
     }
     .foils img {
-    	width: 100px;
+    	width: 150px;
     }
 
     .attack-types img {
     	width: 150px;
+    }
+
+    .navbar {
+    	background-color: rgba(0,0,0,.5) !important;
     }
 
 		.navbar-item link {
@@ -194,19 +189,49 @@ h6 {
 
 		.navbar-brand,
 		.navbar-nav .nav-link {
-		    padding-top: 1rem;
-		    padding-bottom: 1rem;
+		    padding-top: 0.5rem;
+		    padding-bottom: 0.5rem;
 		    padding-right: 0.5rem;
 		}
-
 
 		.nav-item {
 			padding-left: 0.5rem;
 		}
 
+		.about-cards .cards img {
+			width: 150px !important;
+		}
 }
 
 @media (min-width: 769px) {
+		h1 {
+		    font-size: 64px !important; /* Adjust the font size for h1 */
+		}
+
+		h2 {
+		    font-size: 64px !important; /* Adjust the font size for h2 */
+		}
+
+		h3 {
+		    font-size: 48px; /* Adjust the font size for h3 */
+		}
+
+		h4 {
+		    font-size: 1.5rem; /* Adjust the font size for h4 */
+		}
+
+		h5 {
+		    font-size: 2rem !important; /* Adjust the font size for h5 */
+		}
+
+		h6 {
+		    font-size: 1.4rem !important; /* Adjust the font size for h6 */
+		}
+
+		.collab img {
+			width: 300px;
+		}
+
     .hero {
       background-size: cover;
       background-image: url("images/background/hero.webp");
@@ -214,6 +239,7 @@ h6 {
 	    background-position: center top; /* Adjusted background position */
 	    height: 100vh !important;
 	    padding: 80px 160px 80px 160px;
+	    font-size: 16px;
     }
     .logoContainer {
 				max-width: 1000px;
@@ -223,6 +249,11 @@ h6 {
     .rarities {
 /*    	height: 140vh !important;*/
     }
+
+		.rarities .cards img {
+			max-height: 30vh;
+			width: auto;
+		}
 
     .rarities .row {
     	display: flex !important;
@@ -261,6 +292,10 @@ h6 {
 		.try-the-game {
 			margin-right: 150px;
 		}
+
+		.about-cards {
+			height: 100vh !important;
+		}
 }
 
 .carousel img {
@@ -272,7 +307,7 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
-    height: 100vh !important;
+/*    height: 100vh !important;*/
 }
 
 
@@ -280,12 +315,6 @@ h6 {
 	font-size: 16px !important;
 }
 
-.rarities .cards img {
-/*	width: 18vw;*/
-	max-height: 30vh;
-	width: auto;
-/*	height: auto;*/
-}
 
 .rarities .viking img {
 	

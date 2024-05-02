@@ -61,7 +61,7 @@
 <body>
 
 
-<nav class="navbar navbar-expand-lg" style="background-color: #000000;">
+<nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="/images/small-logo.png" class="img-fluid" alt="Example image"	width="100"></a>
     <div class="d-none d-md-block d-lg-block"><img src="/images/navbar-divider.webp" class="" alt="Example image" height="50" ></div>
@@ -111,9 +111,7 @@
   </div>
 </nav>
 
-
-	<div class="text-center divider d-flex justify-content-center align-items-center"></div>
-
+	<div class="text-center divider d-flex justify-content-center align-items-center d-none d-md-block d-lg-block"></div>
 
 	<section id="home">
 	    <div class="text-center hero d-flex justify-content-center align-items-center">
@@ -138,32 +136,35 @@
 
 	<section id="about-cards">
 		<div class="d-flex justify-content-center align-items-center about-cards">
-		    <div class="row">
-		    		<div class="col-lg-6 carousel d-flex justify-content-center align-items-center">
+				
+		    <div class="row text-center">	
+		    		<div class="col-sm-12 col-lg-6 order-1 order-lg-0 carousel d-flex justify-content-center align-items-center cards">
 		            <img class="animate__animated" src="https://dvaiulh40vjp3.cloudfront.net/cards/webp/v3/gold/Anubis.webp" style="display: block;" id="card-0">
 		            <img class="animate__animated" src="https://dvaiulh40vjp3.cloudfront.net/cards/webp/v3/gold/Zeus.webp" style="display: none;" alt="Zeus" id="card-1">
 		            <img class="animate__animated" src="https://dvaiulh40vjp3.cloudfront.net/cards/webp/v3/gold/Odin.webp" style="display: none;" alt="Odin" id="card-2">
 		        </div>
 
-		        <div class="col-lg-6">
-		        	<div class="container align-items-center" style="height: 100%; display: grid; padding: 48px;">
-		        		<div style="padding: 24px">
-	        				<h1>About the Cards</h1>
-			            <div class="d-grid gap-2 d-md-flex mx-auto" style="margin-bottom: 24px;">
-			            	<div class="row">
-											<div class="col">
-												<div class="civ-icon egypt-icon" id="icon-0"></div>
-											</div>
-											<div class="col">
-												<div class="civ-icon greece-icon" id="icon-1"></div>
-											</div>
-											<div class="col">
-												<div class="civ-icon norse-icon" id="icon-2"></div>
-											</div>
-			            	</div>
-			            </div>
-			            <p>Ancient Egyptian god of the dead, associated with mummification and the afterlife, often depicted as a man with the head of a jackal.</p>
-		        		</div>
+		        <div class="col-sm-12 col-lg-6">
+		        	<div class="row">
+		        		<h1>About the Cards</h1>
+		        	</div>
+		        	<div class="row">
+		            <div class="d-grid gap-2 d-md-flex mx-auto justify-content-center align-items-center">
+		            	<div class="row">
+										<div class="col">
+											<div class="civ-icon egypt-icon" id="icon-0"></div>
+										</div>
+										<div class="col">
+											<div class="civ-icon greece-icon" id="icon-1"></div>
+										</div>
+										<div class="col">
+											<div class="civ-icon norse-icon" id="icon-2"></div>
+										</div>
+		            	</div>
+		            </div>
+		        	</div>
+		        	<div class="row">
+		        		<p>Ancient Egyptian god of the dead, associated with mummification and the afterlife, often depicted as a man with the head of a jackal.</p>
 		        	</div>
 		        </div>        
 		    </div>
@@ -228,14 +229,18 @@
 	<section id="foils">
 		<div class="d-flex justify-content-center foils">		
 			<div class="container text-center">
-				<h2>Card Foils</h2>
+				
 			    <div class="row justify-content-md-center">
+
+			    	<div class="col-sm-12 order-1 order-lg-0">
+			    		<h2>Card Foils</h2>
+			    	</div>
 
 			      <div class="col-sm-12 col-lg-6 viking">
 			        <img src="/images/foils.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
 			      </div>
 
-			      <div class="col">
+			      <div class="col order-2">
 
 			      	<div class="row">
 						    <div class="col col-sm-6 col-lg-12">
@@ -244,7 +249,7 @@
 							      	<img src="https://dvaiulh40vjp3.cloudfront.net/cards/webp/v3/silver/Nile-croc.webp" class="mx-lg-auto img-fluid" alt="Bootstrap Themes">
 							      </div>
 							      <div class="col card-description">
-								    	<div class="container align-items-center" >
+								    	<div class="align-items-center" >
 								    		<h3>Silver</h3>
 								     		Most common foil. Gives no bonus
 								    	</div>
@@ -258,7 +263,7 @@
 											<img src="https://dvaiulh40vjp3.cloudfront.net/cards/webp/v3/gold/Berserk.webp" class="mx-lg-auto img-fluid" alt="Bootstrap Themes">
 							      </div>
 							      <div class="col card-description">
-								    	<div class="container align-items-center" >
+								    	<div class="align-items-center" >
 								    		<h3>Gold</h3>
 								      	Rare foil that gives % boost on crypto earn per battle
 								    	</div>
@@ -332,24 +337,17 @@
 				</div>
 	    </div>
 	  </div>
-		<div class="container px-4 my-5 text-center">
-		  <div class="row">
-		    <div class="col">
-		      <img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image" >
-		    </div>
-		    <div class="col">
-		      <img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image" >
-		    </div>
-		    <div class="col">
-		      <img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image" >
-		    </div>
-		    <div class="col">
-		      <img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image" >
-		    </div>
-		    <div class="col">
-		      <img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image" >
+		<div class="container">
+
+		  <div class="row collab">
+		    <div class="col-lg-12 col-sm-6">
+					<img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image">
+					<img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image">
+					<img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image">
+					<img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image">
 		    </div>
 		  </div>
+
 		</div>
 	</section> 
 
