@@ -273,6 +273,13 @@ h1, h2, h3, h4, h5, h6 {
 /*    	height: 140vh !important;*/
   }
 
+  .p2e .container {
+    max-width: 60%;
+  }
+
+  .p2e h2 {
+    margin-top: 50px;
+  }
 
 	.rarities .cards img {
 		max-width: 10vw;
