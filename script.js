@@ -85,3 +85,16 @@ setInterval(async() => {
 // // Call the function when the page loads and on resize
 // window.onload = addScreenSizeClass;
 // window.onresize = addScreenSizeClass;
+
+
+/// TRAILER
+
+function startTrailer() {
+	document.getElementById("video").innerHTML = '<iframe id="videoEmbed" src="https://www.youtube.com/embed/-5Kkxuuvaq4?si=Lnl7PdC7180i2twM&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+	document.getElementById("videoEmbed").style.height = document.getElementById("home").offsetHeight+'px'
+	document.getElementById("video").style.zIndex = 10;
+	document.getElementById("video").style.top = "140px";
+	setTimeout(() => {
+		document.getElementById("video").style.top = "-1500px";
+	}, 22000)
+}
