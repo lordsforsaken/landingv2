@@ -138,6 +138,18 @@ h1, h2, h3, h4, h5, h6 {
   filter: grayscale(1%) saturate(1%) contrast(1%); !important;
 }   
 
+.inverted-image {
+  filter: invert(1);
+}
+
+.collab {
+  padding: 100px;
+}
+
+.collab h1 {
+  padding: 50px;
+}
+
 @media (max-width: 768px) {
   /* Adjust background image size for smaller screens if necessary */
   body {
@@ -151,6 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .collab img {
   	width: 150px;
+    max-height: 50px;
   }
 
   .logoContainer {
@@ -165,10 +178,6 @@ h1, h2, h3, h4, h5, h6 {
 		max-width: 80vw;
 		width: auto;
 	}
-
-  .rarities, .attack-types, .p2e, .collab, .footer, .divider, .join {
-    background-color: black !important;
-  }
 
   .rarities .row {
   	display: inline-flex !important;
@@ -252,7 +261,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 
 	.collab img {
-		width: 300px;
+    width: 300px;
+    height: auto;
 	}
 
   .hero {
@@ -410,11 +420,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p2e {
-    background-image: url("images/background/p2e.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    height: 100vh !important;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/p2e.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
 }
 
 
@@ -449,21 +458,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .melee {
-    background-image: url("images/background/melee.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/melee.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
 }
 
 .ranged {
-    background-image: url("images/background/ranged.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/ranged.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
 }
 
 .magic {
-    background-image: url("images/background/magic.webp");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/magic.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
