@@ -160,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     background-color: black;
     color: white; /* Ensure the text is readable on the black background */
-    padding: 20px; /* Optional: Adjust padding as needed */
+    padding: 70px; /* Optional: Adjust padding as needed */
     background-image: none; /* Ensure no background image is set */
 }
 
@@ -169,6 +169,14 @@ h1, h2, h3, h4, h5, h6 {
   .hero {
       background-size: 100% auto;
       background-image: url("images/background/hero-mobile.webp");
+  }
+
+  .collab h1 {
+    padding: 2px;
+  }
+
+  .collab div {
+    margin: 10px !important;
   }
 
   .collab img {
