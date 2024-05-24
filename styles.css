@@ -166,13 +166,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   /* Adjust background image size for smaller screens if necessary */
-  body {
-    background-size: 100% auto;
-    background-image: url("images/background/hero-mobile.webp");
-    background-repeat: no-repeat;
-    background-position: center top; /* Adjusted background position */
-    height: 100vh !important;
-    font-size: 16px;
+  .hero {
+      background-size: 100% auto;
+      background-image: url("images/background/hero-mobile.webp");
   }
 
   .collab img {
@@ -288,6 +284,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 80px 160px 80px 160px;
     font-size: 16px;
   }
+
   .logoContainer {
 			max-width: 1000px;
 			margin-top: 5%;

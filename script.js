@@ -61,32 +61,6 @@ setInterval(async() => {
 
 }, 5000)
 
-// // Function to add screen size classes
-// function addScreenSizeClass() {
-// const width = window.innerWidth;
-// const mainButtons = document.getElementById("main-buttons");
-// const raritiesDesktop = document.getElementById("desktop");
-// const raritiesMobile = document.getElementById("mobile")
-
-// if (width <= 767) {
-//   mainButtons.classList.remove('d-grid');
-//   // raritiesDesktop.classList.remove('d-flex')
-//   // raritiesDesktop.style.display = "none";
-//   // raritiesMobile.style.display = "flex";
-//   console.log(raritiesDesktop)
-// } else {
-//   mainButtons.classList.add('d-grid');
-//   // raritiesMobile.classList.remove('d-flex')
-//   // raritiesDesktop.style.display = "flex";
-//   // raritiesMobile.style.display = "none";
-// }
-// }
-
-// // Call the function when the page loads and on resize
-// window.onload = addScreenSizeClass;
-// window.onresize = addScreenSizeClass;
-
-
 /// TRAILER
 
 function startTrailer() {
@@ -98,3 +72,4 @@ function startTrailer() {
 		document.getElementById("video").style.top = "-1500px";
 	}, 22000)
 }
+
