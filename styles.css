@@ -150,6 +150,20 @@ h1, h2, h3, h4, h5, h6 {
   padding: 50px;
 }
 
+#rarities, #attack-types, #p2e, #join {
+    background-color: black;
+    color: white; /* Ensure the text is readable on the black background */
+    padding: 20px; /* Optional: Adjust padding as needed */
+    background-image: none; /* Ensure no background image is set */
+}
+
+.footer {
+    background-color: black;
+    color: white; /* Ensure the text is readable on the black background */
+    padding: 20px; /* Optional: Adjust padding as needed */
+    background-image: none; /* Ensure no background image is set */
+}
+
 @media (max-width: 768px) {
   /* Adjust background image size for smaller screens if necessary */
   body {
