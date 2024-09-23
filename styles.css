@@ -71,20 +71,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .egypt-icon {
-    background-image: url('https://dvaiulh40vjp3.cloudfront.net/logos-icons/civs-icons/gray/egypt.png'), url('./images/icon.webp');
+    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/egypt.png'), url('./images/icon.webp');
     background-size: 30% auto, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
     opacity: 1;
 }
 
 .greece-icon {
-    background-image: url('https://dvaiulh40vjp3.cloudfront.net/logos-icons/civs-icons/gray/greece.png'), url('./images/icon.webp');
+    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/greece.png'), url('./images/icon.webp');
     background-size: auto 70%, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
 }
 
 .norse-icon {
-    background-image: url('https://dvaiulh40vjp3.cloudfront.net/logos-icons/civs-icons/gray/norse.png'), url('./images/icon.webp');
+    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/norse.png'), url('./images/icon.webp');
     background-size:  50% auto, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
 }
