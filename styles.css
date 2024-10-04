@@ -3,6 +3,20 @@ html, body {
     overflow-x: hidden;
 }
 
+:root {
+  --mainHero: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/hero.webp");
+  --divider: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/divider2.webp");
+  --button: url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/button.webp');
+  --hero: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/hero.webp");
+  --about-cards: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/about-cards.webp");
+  --foils: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/foils.webp");
+  --p2e: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/p2e.webp");
+  --join: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/join.webp");
+  --melee: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/melee.webp");
+  --ranged: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/ranged.webp");
+  --magic: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/magic.webp");
+}
+
 body {
     background-color: black;
     font-family: 'Poppins';
@@ -37,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Germania One';
     font-size: 28px !important;
     color: #EAC88C !important;
-    background-image: url('./images/button.webp'); /* Replace 'button-background.jpg' with the path to your button image */
+    background-image: var(--button); /* Replace 'button-background.jpg' with the path to your button image */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-color: rgba(0,0,0,0);
@@ -71,20 +85,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .egypt-icon {
-    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/egypt.png'), url('./images/icon.webp');
+    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/egypt.png'), url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/icon.webp');
     background-size: 30% auto, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
     opacity: 1;
 }
 
 .greece-icon {
-    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/greece.png'), url('./images/icon.webp');
+    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/greece.png'), url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/icon.webp');
     background-size: auto 70%, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
 }
 
 .norse-icon {
-    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/norse.png'), url('./images/icon.webp');
+    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/norse.png'), url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/icon.webp');
     background-size:  50% auto, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
 }
@@ -121,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .divider {
-  background-image: url("images/divider2.webp");
+  background-image: var(--divider);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; /* Adjusted background position */
@@ -168,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Adjust background image size for smaller screens if necessary */
   .hero {
       background-size: 100% auto;
-      background-image: url("images/background/hero-mobile.webp");
+      background-image: var(--mainHero);
   }
 
   .collab h1 {
@@ -285,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .hero {
     background-size: cover;
-    background-image: url("images/background/hero.webp");
+    background-image: var(--hero);
     background-repeat: no-repeat;
     background-position: center top; /* Adjusted background position */
     height: 100vh !important;
@@ -380,7 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-cards {
-  background-image: url("images/background/about-cards.webp");
+  background-image: var(--about-cards);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -422,7 +436,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .foils {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/foils.webp");
+  background-image: var(--foils);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -439,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .p2e {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/p2e.webp");
+  background-image: var(--p2e);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -457,7 +471,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .join {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/join.webp");
+  background-image: var(--join);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; /* Adjusted background position */
@@ -477,21 +491,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .melee {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/melee.webp");
+    background-image: var(--melee);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
 }
 
 .ranged {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/ranged.webp");
+    background-image: var(--ranged);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */
 }
 
 .magic {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("images/background/magic.webp");
+    background-image: var(--magic);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top; /* Adjusted background position */

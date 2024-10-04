@@ -58,13 +58,49 @@
     "operatingSystem": "Web"
   }
   </script>
+  <script>
+      // Declare the global variable for CDN URL
+      const cdnUrl = "https://d1ji3mpeqp3ic0.cloudfront.net";
+      // Function to set the image source
+      function setImageSrc() {
+          document.getElementById('koinos-logo').src = `${cdnUrl}/landing/colabs/koinos-logo-light.png`;
+          document.getElementById('linea-logo').src = `${cdnUrl}/landing/colabs/linea.svg`;
+          document.getElementById('eth-logo').src = `${cdnUrl}/landing/colabs/eth.png`;
+          document.getElementById('rarities-img').src = `${cdnUrl}/landing/rarities.webp`;
+          document.getElementById('small-logo').src = `${cdnUrl}/landing/small-logo.png`;
+          document.getElementById('small-logo-2').src = `${cdnUrl}/landing/small-logo.png`;
+          document.getElementById('navbar-divider').src = `${cdnUrl}/landing/navbar-divider.webp`;
+          document.getElementById('foils-img').src = `${cdnUrl}/landing/foils.webp`;
+          document.getElementById('telegram-icon').src = `${cdnUrl}/landing/socials/border/telegram.png`;
+          document.getElementById('discord-icon').src = `${cdnUrl}/landing/socials/border/discord.png`;
+          document.getElementById('twitter-icon').src = `${cdnUrl}/landing/socials/border/twitter.png`;
+          document.getElementById('main-logo').src = `${cdnUrl}/landing/main-logo.png`;
+          document.getElementById('p2e-img').src = `${cdnUrl}/landing/p2e.webp`;
+          document.getElementById('melee-icon').src = `${cdnUrl}/landing/attacks/melee-icon.png`;
+          document.getElementById('ranged-icon').src = `${cdnUrl}/cards/icons/Ranged.png`;
+          document.getElementById('magic-icon').src = `${cdnUrl}/landing/attacks/magic-icon.png`;
+
+          document.getElementById('twitter-social').src = `${cdnUrl}/landing/socials/twitter.png`;
+          document.getElementById('discord-social').src = `${cdnUrl}/landing/socials/discord.png`;
+          document.getElementById('telegram-social').src = `${cdnUrl}/landing/socials/telegram.png`;
+          document.getElementById('wiki-social').src = `${cdnUrl}/landing/socials/wiki.png`;
+      }
+
+      // Call the function once the DOM is fully loaded
+      document.addEventListener('DOMContentLoaded', setImageSrc);
+  </script>
+
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="/images/small-logo.png" class="img-fluid" alt="Example image"	width="100"></a>
-    <div class="d-none d-md-block d-lg-block"><img src="/images/navbar-divider.webp" class="" alt="Example image" height="50" ></div>
+    <a class="navbar-brand" href="#">
+    	<img id="small-logo" class="img-fluid" alt="Example image"	width="100">
+    </a>
+    <div class="d-none d-md-block d-lg-block">
+    	<img id="navbar-divider" class="" alt="Example image" height="50">
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -93,17 +129,17 @@
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="https://twitter.com/lordsforsak3n" target="_blank">
-    				<img src="/images/socials/border/twitter.png" class="img-fluid" alt="Example image"	width="18" >
+    				<img id="twitter-icon" class="img-fluid" alt="Example image"	width="18" >
          	</a>
         </li>
         <li class="nav-item">
 					<a class="nav-link" href="https://discord.gg/VBKmvh2u6S" target="_blank">
-						<img src="/images/socials/border/discord.png" class="img-fluid" alt="Example image"	width="18" >
+						<img id="discord-icon" class="img-fluid" alt="Example image"	width="18" >
 					</a>
         </li>
         <li class="nav-item">
 					<a class="nav-link" href="https://t.me/lordsforsaken" target="_blank">
-						<img src="/images/socials/border/telegram.png" class="img-fluid" alt="Example image"width="18" >
+						<img id="telegram-icon" class="img-fluid" alt="Example image"width="18" >
 					</a>
         </li>
         <li class="nav-item try-the-game">
@@ -121,7 +157,7 @@
 	<section id="home">
 	    <div class="text-center hero d-flex justify-content-center align-items-center">
 	        <div class="col-lg-6 mx-auto logoContainer">
-	            <img src="/images/main-logo.png" class="img-fluid" alt="Example image">
+	            <img id="main-logo" class="img-fluid" alt="Example image">
 	            <div id="main-buttons" class="container d-grid gap-4 d-sm-flex justify-content-sm-center mb-5">
 	            	<div class="row">
 	            		<div class="col-sm-12 col-lg-6">
@@ -186,7 +222,7 @@
 		<div class="container text-center rarities">
 		  <div class="row viking">
 		    <div class="col align-items-center">
-		      <img src="/images/rarities.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
+		      <img id="rarities-img" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
 		    </div>
 		  </div>
 		  <h2 style="margin-top: -64px;">Rarities</h2>
@@ -244,7 +280,7 @@
 			    	</div>
 
 			      <div class="col-sm-12 col-lg-6 viking">
-			        <img src="/images/foils.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
+			        <img id="foils-img" class="d-block mx-lg-auto img-fluid" alt="card foils" >
 			      </div>
 
 			      <div class="col order-2 align-items-end">
@@ -288,7 +324,7 @@
             <div class="col-sm-12 col-lg-4">
                 <div class="melee attack">
                     <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <img src="/images/attacks/melee-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
+                        <img id="melee-icon" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
                         <div class="container attack-description">
 	                        <h5 class="card-title">Melee</h5>
                         	<p class="card-text">Typical attack type of front tanks or sneak units</p>
@@ -299,7 +335,7 @@
             <div class="col-sm-12 col-lg-4">
                 <div class="ranged attack">
                     <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <img src="https://d1ji3mpeqp3ic0.cloudfront.net/cards/icons/Ranged.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="160">
+                        <img id="ranged-icon" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="160">
                         <div class="container attack-description">
 	                        <h5 class="card-title">Ranged</h5>
 	                        <p class="card-text">Shoot your enemies from support line!</p>
@@ -311,7 +347,7 @@
             <div class="col-sm-12 col-lg-4">
                 <div class="magic attack">
                     <div class="card-body d-flex flex-column align-items-center justify-content-end">
-                        <img src="/images/attacks/magic-icon.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
+                        <img id="magic-icon" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" >
                         <div class="container attack-description">
 	                        <h5 class="card-title">Magic</h5>
 	                        <p class="card-text">High mana, Cannot miss!</p>
@@ -343,7 +379,7 @@
 					    		</div>
 
 					    		<div class="row text-center	justify-content-center">
-					    			<img src="/images/p2e.webp" class="img-fluid" alt="Example image">
+					    			<img id="p2e-img" class="img-fluid" alt="play to earn">
 					    		</div>
 					    </div>
 						</div>
@@ -355,13 +391,13 @@
 		  <div class="row collab align-items-center text-center">
 		  	<h1>Powered by</h1>
 		    <div class="col-lg-4 col-sm-4">
-		    	<img src="/images/colabs/koinos.png" class="img-fluid" alt="Example image">
+		    	<img id="koinos-logo" class="img-fluid" alt="Koinos logo">
 		    </div>
 		    <div class="col-lg-4 col-sm-4">
-		    	<img src="/images/colabs/linea.svg" class="img-fluid" alt="Example image" width="50">
+		    	<img id="linea-logo" class="img-fluid" alt="Linea network logo" width="200">
 		    </div>
 		    <div class="col-lg-4 col-sm-4">
-		    	<img src="/images/colabs/eth.png" class="img-fluid inverted-image" alt="Example image">
+		    	<img id="eth-logo" class="img-fluid inverted-image" alt="Ethereum logo">
 		    </div>
 		  </div>
 
@@ -391,24 +427,24 @@
 <div class="container footer">
   <div class="row justify-content-md-center">
     <div class="col-lg-4 text-center align-items-center">
-    	<img class="img-fluid"  src="/images/small-logo.png" alt="Example image">
+    	<img class="img-fluid" id="small-logo-2" alt="Example image">
     	<div class="">lordsforsak3n@gmail.com</div>
     	<div class="">Copyright © 2024 LordsForsaken. All rights reserved</div>
 
     	<div class="row">
     		<div class="col">
     			<a class="nav-link" href="https://twitter.com/lordsforsak3n" target="_blank">
-    				<img src="/images/socials/twitter.png" class="img-fluid" alt="Example image">
+    				<img id="twitter-social" class="img-fluid" alt="Example image">
     			</a>
     		</div>
     		<div class="col">
     			<a class="nav-link" href="https://discord.gg/VBKmvh2u6S" target="_blank">
-    				<img src="/images/socials/discord.png" class="img-fluid" alt="Example image">
+    				<img id="discord-social" class="img-fluid" alt="Example image">
     			</a>
     		</div>
     		<div class="col">
     			<a class="nav-link" href="https://t.me/lordsforsaken" target="_blank">
-    				<img src="/images/socials/telegram.png" class="img-fluid" alt="Example image">
+    				<img id="telegram-social" class="img-fluid" alt="Example image">
     			</a>
     		</div>
 <!--     		<div class="col">
@@ -418,7 +454,7 @@
     		</div> -->
     		<div class="col">
     			<a class="nav-link" href="https://wiki.lordsforsaken.com" target="_blank">
-    				<img src="/images/socials/wiki.png" class="img-fluid" alt="Example image">
+    				<img id="wiki-social" class="img-fluid" alt="Example image">
     			</a>
     		</div>
     	</div>
