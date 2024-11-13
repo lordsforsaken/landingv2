@@ -66,6 +66,7 @@
           document.getElementById('koinos-logo').src = `${cdnUrl}/landing/colabs/koinos-logo-light.png`;
           document.getElementById('linea-logo').src = `${cdnUrl}/landing/colabs/linea.svg`;
           document.getElementById('eth-logo').src = `${cdnUrl}/landing/colabs/eth.png`;
+          document.getElementById('nile-logo').src = `${cdnUrl}/landing/colabs/nile/nile_text.png`;
           document.getElementById('rarities-img').src = `${cdnUrl}/landing/rarities.webp`;
           document.getElementById('small-logo').src = `${cdnUrl}/landing/small-logo.png`;
           document.getElementById('small-logo-2').src = `${cdnUrl}/landing/small-logo.png`;
@@ -157,7 +158,7 @@
 	<section id="home">
 	    <div class="text-center hero d-flex justify-content-center align-items-center">
 	        <div class="col-lg-6 mx-auto logoContainer">
-	            <img id="main-logo" class="img-fluid" alt="Example image">
+	            <img id="main-logo" class="img-fluid main-logo" alt="Main Logo">
 	            <div id="main-buttons" class="container d-grid gap-4 d-sm-flex justify-content-sm-center mb-5">
 	            	<div class="row">
 	            		<div class="col-sm-12 col-lg-6">
@@ -206,7 +207,7 @@
 		        	</div>
 		        	<div class="row">
 		        		<div class="text-left">
-		        			<p id="card-description-text">Ancient Egyptian god of the dead, associated with mummification and the afterlife, often depicted as a man with the head of a jackal</p>
+		        			<p id="card-description-text" class="card-description-text">Ancient Egyptian god of the dead, associated with mummification and the afterlife, often depicted as a man with the head of a jackal</p>
 		        		</div>
 		        	</div>
 		        </div>        
@@ -390,14 +391,17 @@
 
 		  <div class="row collab align-items-center text-center">
 		  	<h1>Powered by</h1>
-		    <div class="col-lg-4 col-sm-4">
-		    	<img id="koinos-logo" class="img-fluid" alt="Koinos logo">
+		    <div class="col-lg-3 col-sm-3">
+		    	<img id="koinos-logo" class="img-fluid" alt="Koinos logo" style="width: 200px; height: auto;">
 		    </div>
-		    <div class="col-lg-4 col-sm-4">
-		    	<img id="linea-logo" class="img-fluid" alt="Linea network logo" width="200">
+		    <div class="col-lg-3 col-sm-3">
+		    	<img id="linea-logo" class="img-fluid" alt="Linea network logo" width="100" style="width: 200px; height: auto;">
 		    </div>
-		    <div class="col-lg-4 col-sm-4">
-		    	<img id="eth-logo" class="img-fluid inverted-image" alt="Ethereum logo">
+		    <div class="col-lg-3 col-sm-3">
+		    	<img id="eth-logo" class="img-fluid inverted-image" alt="Ethereum logo" style="width: 200px; height: auto;">
+		    </div>
+		    <div class="col-lg-3 col-sm-3">
+		    	<img id="nile-logo" class="img-fluid" alt="Nile logo" style="width: 100px; height: auto;">
 		    </div>
 		  </div>
 

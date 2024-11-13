@@ -7,7 +7,7 @@ html, body {
   --mainHero: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/hero.webp");
   --divider: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/divider2.webp");
   --button: url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/button.webp');
-  --hero: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/hero.webp");
+  --mobileHero: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/hero-mobile.webp");
   --about-cards: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/about-cards.webp");
   --foils: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/foils.webp");
   --p2e: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/p2e.webp");
@@ -178,11 +178,54 @@ h1, h2, h3, h4, h5, h6 {
     background-image: none; /* Ensure no background image is set */
 }
 
+.hero {
+  background-size: cover;
+  background-image: var(--mainHero);
+  background-repeat: no-repeat;
+  background-position: center top; /* Adjusted background position */
+  height: 100vh !important;
+  padding: 80px 160px 80px 160px;
+  font-size: 16px;
+}
+
+.main-logo {
+  max-width: 600px;
+  height: auto;
+}
+
+
 @media (max-width: 768px) {
+
+  .card-description-text {
+    padding: 10%;
+    font-family: 'Poppins';
+    size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .main-logo {
+    width: 240px;
+  }
+
+  .image-button {
+    font-size: 20px !important;
+    width: 240px; /* Adjust width and height based on your button image */
+    height: 58px;
+    font-size: 24px; /* Text size */
+    text-align: center; /* Center the text horizontally */
+    line-height: 56px; /* Center the text vertically */
+    cursor: pointer;
+    letter-spacing: -2%;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    transition: opacity 0.3s ease; 
+  }
+
   /* Adjust background image size for smaller screens if necessary */
   .hero {
       background-size: 100% auto;
-      background-image: var(--mainHero);
+      background-image: var(--mobileHero);
+      height: 545px !important;
   }
 
   .collab h1 {
@@ -297,16 +340,6 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
 	}
 
-  .hero {
-    background-size: cover;
-    background-image: var(--hero);
-    background-repeat: no-repeat;
-    background-position: center top; /* Adjusted background position */
-    height: 100vh !important;
-    padding: 80px 160px 80px 160px;
-    font-size: 16px;
-  }
-
   .logoContainer {
 			max-width: 1000px;
 			margin-top: 5%;
@@ -343,7 +376,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .card-description {
-		height: 40%; display: grid; padding: 24px; margin-top: 15%;
+		height: 40%; 
+    display: grid; 
+    padding: 24px; 
+    margin-top: 15%;
   }
 
   .attack-types h2 {
