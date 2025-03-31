@@ -4,17 +4,17 @@ html, body {
 }
 
 :root {
-  --mainHero: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/hero.webp");
-  --divider: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/divider2.webp");
-  --button: url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/button.webp');
-  --mobileHero: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/hero-mobile.webp");
-  --about-cards: url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/about-cards.webp");
-  --foils: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/foils.webp");
-  --p2e: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/p2e.webp");
-  --join: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/join.webp");
-  --melee: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/melee.webp");
-  --ranged: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/ranged.webp");
-  --magic: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d1ji3mpeqp3ic0.cloudfront.net/landing/background/magic.webp");
+  --mainHero: url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/hero.webp");
+  --divider: url("https://d3ert1ki5h6mfw.cloudfront.net/landing/divider2.webp");
+  --button: url('https://d3ert1ki5h6mfw.cloudfront.net/landing/button.webp');
+  --mobileHero: url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/hero-mobile.webp");
+  --about-cards: url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/about-cards.webp");
+  --foils: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/foils.webp");
+  --p2e: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/p2e.webp");
+  --join: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/join.webp");
+  --melee: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/melee.webp");
+  --ranged: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/ranged.webp");
+  --magic: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://d3ert1ki5h6mfw.cloudfront.net/landing/background/magic.webp");
 }
 
 body {
@@ -85,20 +85,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .egypt-icon {
-    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/egypt.png'), url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/icon.webp');
+    background-image: url('https://d3ert1ki5h6mfw.cloudfront.net/logos-icons/civs-icons/gray/egypt.png'), url('https://d3ert1ki5h6mfw.cloudfront.net/landing/icon.webp');
     background-size: 30% auto, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
     opacity: 1;
 }
 
 .greece-icon {
-    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/greece.png'), url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/icon.webp');
+    background-image: url('https://d3ert1ki5h6mfw.cloudfront.net/logos-icons/civs-icons/gray/greece.png'), url('https://d3ert1ki5h6mfw.cloudfront.net/landing/icon.webp');
     background-size: auto 70%, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
 }
 
 .norse-icon {
-    background-image: url('https://d1ji3mpeqp3ic0.cloudfront.net/logos-icons/civs-icons/gray/norse.png'), url('https://d1ji3mpeqp3ic0.cloudfront.net/landing/icon.webp');
+    background-image: url('https://d3ert1ki5h6mfw.cloudfront.net/logos-icons/civs-icons/gray/norse.png'), url('https://d3ert1ki5h6mfw.cloudfront.net/landing/icon.webp');
     background-size:  50% auto, contain; /* Set the size of each background image */
     background-position: center, center; /* Position each background image */
 }
